@@ -1,0 +1,78 @@
+{% extends 'base.html'%}
+{% block content %}
+
+	<body class="left-sidebar">
+
+		<!-- Header -->
+			<div id="header-wrapper">
+				<header id="header" class="container">
+				
+					<!-- Logo -->
+						<div id="logo">
+							<h1><a href="/"><img src="{{url_for('static', filename= 'images/IBM.png')}}" alt="" height="75" width="155"/></a></h1>
+						</div>					
+						
+					
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li class="current"><a href="index.html">Made By</a></li>
+								<li><a href="">Saumya Choksi</a><ul><li><a href="#">Enrollment No:15012121001</a></li></ul></li>
+								<li><a href="">Yash Dagli</a><ul><li><a href="#">Enrollment No:15012121002</a></li></ul></li>
+								<li><a href="">Rushi Vyas</a><ul><li><a href="#">Enrollment No:15012121036</a></li></ul></li>
+								<li><a href="">About Us</a></li>
+							</ul>
+						</nav>
+					
+				</header>
+			</div>
+		
+		<!-- Main -->
+			<div id="main-wrapper">
+				<div class="container">
+					<div class="row 200%">
+						<div class="2u">
+						</div>
+						<div class="8u important(collapse)">
+							<div id="content">
+								<!-- Content -->
+									<article>
+										<h2>Select a Movie</h2>
+										<form action='/next' method="post" novalidate>
+											<div class="form-group input-group">
+												<select name ="movie" class="form-control">
+														<option value="{{users[0]}}" selected>{{users[0]}}</option>
+															{% for user in users[1:] %}
+															   <option value="{{user}}">{{user}}</option>
+															{% endfor %}
+												</select>
+											</div> <!-- form-group end.// -->
+											<br>
+											<footer>
+												<button type="submit" class="button icon fa-arrow-circle-right">Next</button>
+											</footer>
+										</form>
+									</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- Footer -->
+			<div id="footer-wrapper">
+				<footer id="footer" class="container">
+					<div class="row">
+						<div class="12u">
+							<div id="copyright">
+								<ul class="menu">
+									<li>&copy; Untitled. All rights reserved</li><li>Design: SEM 8 Students [Final Year Project]</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+
+	</body>
+{% endblock %}

@@ -1,0 +1,42 @@
+table.dataframe {
+    width: 120%;
+    color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+}
+
+.dataframe th {
+    border: 1px solid #CCC;
+    border: 1px solid transparent;
+    height: 30px;
+    background: #F3F3F3;
+    font-weight: bold;
+    padding: 10px 30px 10px;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.dataframe td {
+    border: 1px solid #CCC;
+    border: 1px solid transparent;
+    height: 30px;
+    background: #FAFAFA;
+    text-align: center;
+    transition: all 0.3s;
+}
+.male th {
+    background-color: #add8e6;
+    color: white;
+}
+
+.female th {
+    background-color: #77dd77;
+    color: white;
+}
+
+tr:nth-child(odd) 		{  background: #FEFEFE; }
+tr:nth-child(even)  	{  background: #FEFEFE; }
+
+tr td:hover            { background: #666; color: #FFF;}

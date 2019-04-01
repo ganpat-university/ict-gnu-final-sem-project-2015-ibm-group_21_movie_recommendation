@@ -1,0 +1,100 @@
+{% extends 'base.html'%}
+{% block content %}
+<body class="homepage">
+		<!-- Header -->
+			<div id="header-wrapper">
+				<header id="header" class="container">				
+					<!-- Logo -->
+						<div id="logo">
+							<h1><a href=""><img src="{{url_for('static', filename= 'images/IBM.png')}}" alt="" height="75" width="155"/></a></h1>
+						</div>					
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li class="current"><a href="index.html">Made By</a></li>
+								<li><a href="">Saumya Choksi</a><ul><li><a href="#">Enrollment No:15012121001</a></li></ul></li>
+								<li><a href="">Yash Dagli</a><ul><li><a href="#">Enrollment No:15012121002</a></li></ul></li>
+								<li><a href="">Rushi Vyas</a><ul><li><a href="#">Enrollment No:15012121036</a></li></ul></li>
+								<li><a href="">About Us</a></li>
+							</ul>
+						</nav>					
+				</header>
+			</div>
+		
+		<!-- Features -->
+			<div id="features-wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="6u">						
+							<!-- Box -->
+								<section class="box feature">
+									<a href="demo" class="image featured"><img src="../static/images/gullyboy.jpg" alt="" /></a>
+									<div class="inner">
+										<header>
+											<h2>Trending Movies</h2>
+											<p>Based on Demographic Filtering Approach</p>
+										</header>
+										<a href="demo" class="button icon fa-arrow-circle-right">Get Recommendations</a>
+									</div>
+								</section>
+						</div>
+						<div class="6u">						
+							<!-- Box -->
+								<section class="box feature">
+									<a href="rbm" class="image featured"><img src="../static/images/godfather.jpg" alt="" /></a>
+									<div class="inner">
+										<header>
+											<h2>Top picks for you</h2>
+											<p>Based on Restricted Boltzmann Machine[RBM]</p>
+										</header>
+										<a href="rbm" class="button icon fa-arrow-circle-right">Get Recommendations</a>
+									</div>
+								</section>
+						</div>
+						<div class="6u">						
+							<!-- Box -->
+								<section class="box feature last">
+									<a href="collab" class="image featured"><img src="../static/images/cap.jpg" alt="" /></a>
+									<div class="inner">
+										<header>
+											<h2>Movies you may like</h2>
+											<p>Based on Colaborative Filtering Approach</p>
+										</header>
+										<a href="collab" class="button icon fa-arrow-circle-right">Get Recommendations</a>
+									</div>
+								</section>
+						</div>
+						<div class="6u">						
+							<!-- Box -->
+								<section class="box feature last">
+									<a href="content" class="image featured"><img src="../static/images/hangover.jpg" alt="" /></a>
+									<div class="inner">
+										<header>
+											<h2>Because you watched certain movies</h2>
+											<p>Based on Content Based Filtering Approach</p>
+										</header>
+										<a href="content" class="button icon fa-arrow-circle-right">Get Recommendations</a>
+									</div>
+								</section>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- Footer -->
+			<div id="footer-wrapper">
+				<footer id="footer" class="container">
+					<div class="row">
+						<div class="12u">
+							<div id="copyright">
+								<ul class="menu">
+									<li>&copy; Untitled. All rights reserved</li><li>Design: SEM 8 Students [Final Year Project]</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+	</body>
+
+{% endblock %}
